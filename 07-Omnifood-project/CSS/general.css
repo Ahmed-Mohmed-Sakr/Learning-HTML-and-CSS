@@ -78,6 +78,10 @@ html {
   /* persentage of user's browser font-size */
   font-size: 62.5%;
   overflow-x: hidden;
+
+  /* dose not work on safari and microsoft edge 
+  so we will se js in that part*/
+  /* scroll-behavior: smooth; */
 }
 
 body {
