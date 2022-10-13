@@ -4,8 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
+    <meta
+      name="description"
+      content="Omifood is an AI-powered food subscription
+       that will make you eat healthy again, 365 days per year. 
+       It's tailored to your personal testes and nutritional needs."
+    />
+
     <!-- important for responive websites -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ico for browser -->
+    <link rel="icon" href="img/favicon.png" />
+
+    <!-- icon if ios user add website to home screen -->
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+
+    <!-- icon id android user add website to home screen -->
+    <link rel="manifest" href="manifest.webmanifest" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,7 +50,7 @@
 
     <script defer src="js/script.js"></script>
 
-    <title>Omnifood</title>
+    <title>Omnifood &mdash; Never cook again!</title>
   </head>
   <body>
     <header class="header">
@@ -95,12 +111,17 @@
           </div>
 
           <div class="hero-imag-box">
-            <img
-              src="img/hero.png"
-              class="hero-img"
-              alt="Woman engjoying food, meals in storage container,
+            <picture>
+              <source srcset="img/hero.webp" type="image/webp" />
+              <source srcset="img/hero-min.png" type="image/png" />
+
+              <img
+                src="img/hero-min.png"
+                class="hero-img"
+                alt="Woman engjoying food, meals in storage container,
              and food on the table"
-            />
+              />
+            </picture>
           </div>
         </div>
       </section>
